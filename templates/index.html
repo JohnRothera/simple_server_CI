@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MelodicHub - Discover Your Sound</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>MelodicHub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="playlists.html">Playlists</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Discover Your Sound</h2>
+                <p>Explore new artists, genres, and musical experiences</p>
+                <a href="explore.html" class="btn">Start Exploring</a>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Featured This Week</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>New Releases</h3>
+                        <p>Check out the latest albums and singles from your favorite artists.</p>
+                        <a href="new-releases.html">View All</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Trending Playlists</h3>
+                        <p>Discover what's hot and trending in the music world right now.</p>
+                        <a href="trending.html">View All</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Upcoming Events</h3>
+                        <p>Don't miss out on live performances and music festivals near you.</p>
+                        <a href="events.html">View All</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="genres">
+            <h2>Browse by Genre</h2>
+            <div class="genre-tags">
+                <a href="rock.html" class="tag">Rock</a>
+                <a href="pop.html" class="tag">Pop</a>
+                <a href="hip-hop.html" class="tag">Hip Hop</a>
+                <a href="jazz.html" class="tag">Jazz</a>
+                <a href="electronic.html" class="tag">Electronic</a>
+                <a href="classical.html" class="tag">Classical</a>
+                <a href="indie.html" class="tag">Indie</a>
+                <a href="folk.html" class="tag">Folk</a>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for weekly music recommendations and news.</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MelodicHub</h3>
+                <p>Your gateway to musical discovery since 2025.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@melodichub.com</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Music Avenue, Harmony City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MelodicHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

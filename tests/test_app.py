@@ -1,10 +1,9 @@
-def test_get_home(web_client):
-    response = web_client.get("/")
-    assert response.status_code == 200
-    assert response.data.decode("utf-8") == "Hello, world!"
+from playwright.sync_api import Page, expect
 
 
-def test_new_feature_fails(web_client):
-    response = web_client.get("/home")
-    assert response.status_code == 200
-    assert response.data.decode("utf-8") == "Homepage"
+def test_index_route_renders_in_html(page, test_web_address):
+    page.goto(f"http://{test_web_address}/")
+
+    header_tag = page.locator("h1")
+
+    expect(header_tag).to_have_text("Welcome to the site!")

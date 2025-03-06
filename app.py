@@ -1,17 +1,12 @@
 import os
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/", methods=["GET"])
 def get_home():
-    return "Hello, world!"
-
-
-@app.route("/home", methods=["GET"])
-def get_homepage():
-    return "Homepage"
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
